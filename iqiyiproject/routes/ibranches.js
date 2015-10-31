@@ -1,13 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
 
-/* GET home page. */
+/* GET users listing. */
 router.get('/', function(req, res, next) {
-  fs.readFile('./views/index.html', 'utf-8', function(err, data) {
-    res.send(data);
-  })
-
+    res.send('分支管理');
 });
 
 module.exports = router;
